@@ -8,7 +8,8 @@
     "dev": "tsx ./src/index.ts",
     "build": "rimraf dist && tsc",
     "start": "npm run build && node ./dist/index.js",
-    "test": "vitest"
+    "test": "vitest",
+    "emit-d": "tsc --declaration --emitDeclarationOnly --declarationDir typings"
   },
   "keywords": [],
   "author": "",
